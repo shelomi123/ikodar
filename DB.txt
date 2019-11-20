@@ -1,0 +1,41 @@
+//Creating the basic structures of the tables
+CREATE TABLE client(
+username varchar(100) PRIMARY KEY,
+email varchar(100) NOT NULL,
+password varchar(100) NOT NULL,
+gender char(1),
+tel int(10));
+
+CREATE TABLE IT(
+username varchar(100) PRIMARY KEY,
+email varchar(100) NOT NULL,
+password varchar(100) NOT NULL,
+edu_quali varchar(1000),
+gender char(1),
+tel int(10));
+
+CREATE TABLE admin(
+username varchar(100) PRIMARY KEY,
+email varchar(100) NOT NULL,
+password varchar(100) NOT NULL,
+gender char(1),
+tel int(10));
+
+CREATE TABLE projects(
+pid int PRIMARY KEY,
+name varchar(100) NOT NULL,
+pdesc varchar(1000) NOT NULL,
+p_end date NOT NULL,
+bid_end date NOT NULL);
+
+//Adding columns to projects table
+ALTER TABLE `projects` 
+ADD `client` VARCHAR(100) NOT NULL AFTER `bid_end`;
+
+ALTER TABLE `projects` 
+ADD `IT_1` VARCHAR(100) NOT NULL AFTER `client`,
+ ADD `IT_2` VARCHAR(1000) NOT NULL AFTER `IT_1`;
+
+//Adding columns to client table
+ALTER TABLE `client` ADD `edu_quali` VARCHAR(10000) NOT NULL AFTER `tel`;
+ALTER TABLE `client` ADD `rating` INT NOT NULL AFTER `edu_quali`;

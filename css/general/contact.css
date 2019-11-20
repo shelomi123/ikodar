@@ -1,0 +1,108 @@
+
+/*header*/
+header{
+  height: 30%;
+  width: 100%;
+  border-spacing: 0%;
+}
+
+/*body*/
+body{
+  background-image: url("../../images/index.jpg");
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+  opacity:80%;
+}
+
+/* input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  font-size: 20px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/*submit button */
+.registerbtn {
+  background-color: #006edb;
+  font-size: 20px;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/*home button*/
+.homebtn {
+  background-color: #006edb;
+  color: white;
+  font-size: 20px;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.homebtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: black;
+}
+
+/* sign in section */
+.signin {
+  background-color: #7e7e7e;
+  text-align: center;
+  
+}
+footer{
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  background-color: #7e7e7e;
+  color: black; 
+  position: absolute; 
+  padding-top:20px; 
+  padding-bottom:50px; 
+  text-align:center; 
+  font-size:30px; 
+}
+
+
+
